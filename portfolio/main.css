@@ -1,7 +1,8 @@
 :root {
-    --accent:#C8A96E;
-    --main-bg:#13110E;
-    --alt-bg:#13200f;
+    --accent:   #C8A96E;  
+    --main-bg:  #13110E;  
+    --alt-bg:   #1C1A14;  
+    --text:     #E8DFC8;  
 }
 a {
     text-decoration: none;
@@ -9,7 +10,7 @@ a {
 }
 body{
     background-color: var(--alt-bg);
-    color: white;
+    color: var(--text);
 }
 .bg_card {
     background-color: var(--main-bg);
@@ -26,11 +27,13 @@ h1 {
 
 .navi_links {
     display: flex;
+    overflow-y: auto;
 }
 
 .link {
     align-self: flex-start;
     background-color: var(--accent);
+    min-width: fit-content;
     padding: 3px 5px;
     margin: 1rem;
     border-radius: 25px;
@@ -58,19 +61,27 @@ h1 {
 
 }
 
+.post_intro {
+    margin: 1rem .5rem;
+}
+
 .card_title {
     border-bottom: 1px solid var(--accent);
-    margin: 2px 10px;
-    min-height: 2rem;
-    max-height: 2.5rem;
+    flex-grow: 1;
+    padding: .3rem;
+    margin: 0px 5px;
+    font-size: 1.5rem;
 }
 .card_content {
     margin: 2px 10px;
-    min-height: auto;
+    flex-grow: 2;
 }
 
 .card_rm {
     min-height: fit-content;
     max-height: fit-content;
     background-color: var(--accent);
+    text-align: end;
+    flex-grow: 1;
+
 }
