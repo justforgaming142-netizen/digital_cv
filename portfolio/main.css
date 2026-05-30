@@ -1,40 +1,76 @@
 :root {
-  /* Primary Colors */
-  --smoky-black: #11120D;
-  --olive-drab:  #565449;
-  --bone:        #D8CFBC;
-  --floral-white: #FFFBF4;
-
-  /* Functional Mappings */
-  --bg-main: var(--floral-white);
-  --bg-dark: var(--smoky-black);
-  --text-main: var(--smoky-black);
-  --text-muted: var(--olive-drab);
-  --accent: var(--bone);
+    --accent:#C8A96E;
+    --main-bg:#13110E;
+    --alt-bg:#13200f;
+}
+a {
+    text-decoration: none;
+    color: var(--alt-bg);
+}
+body{
+    background-color: var(--alt-bg);
+    color: white;
+}
+.bg_card {
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 3rem;
+    margin: 1rem 0rem;
+}
+h1 {
+    border-bottom:  1px solid var(--accent);
+    margin: 0rem 1rem;
+    padding-left: 1rem;
 }
 
-body{
-    background-color: var(--bg-main);
-    color: var(--text-main);
+.navi_links {
+    display: flex;
+}
+
+.link {
+    align-self: flex-start;
+    background-color: var(--accent);
+    padding: 3px 5px;
+    margin: 1rem;
+    border-radius: 25px;
+
+}
+
+.intro {
+    padding-left: 1rem;
+}
+
+.post_cards {
+    display: flex;
     
 }
 
-.container {
-    display: flex;
-    gap: 3px;
-    flex-wrap: wrap;
-    background-color: var(--floral-white);
-}
-.card{
-    border: 3px solid black;
+.post_card{
+    border: 2px solid var(--accent);
     border-radius: 5px;
-    flex: 1 1 300px;
-    min-height: 150px;
-    max-height: 50vh;
+    align-self: flex-start;
+    min-width: 150px;  /* Minimum width of 100 pixels */
+    max-width: 325px;  /* Maximum width of 300 pixels */
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.card-header {
-    margin: 0px 5px;
-    border-bottom: 1px solid var(--smoky-black);
+.card_title {
+    border-bottom: 1px solid var(--accent);
+    margin: 2px 10px;
+    min-height: 2rem;
+    max-height: 2.5rem;
+}
+.card_content {
+    margin: 2px 10px;
+    min-height: auto;
+}
+
+.card_rm {
+    min-height: fit-content;
+    max-height: fit-content;
+    background-color: var(--accent);
 }
