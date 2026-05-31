@@ -34,7 +34,7 @@ h1 {
     align-self: flex-start;
     background-color: var(--accent);
     min-width: fit-content;
-    padding: 3px 5px;
+    padding: .3rem .7rem;
     margin: 1rem;
     border-radius: 25px;
 
@@ -58,11 +58,13 @@ h1 {
     min-height: 350px;
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .post_intro {
     margin: 1rem .5rem;
+    border-bottom: 1px solid var(--accent);
+    
 }
 
 .card_title {
